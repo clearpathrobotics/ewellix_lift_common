@@ -7,6 +7,7 @@
   <xacro:arg name="type" default="tlt_x25"/>
   <xacro:arg name="tf_prefix" default="lift_"/>
   <xacro:arg name="add_plate" default="true"/>
+  <xacro:arg name="add_mount" default="true"/>
   <xacro:arg name="initial_positions" default="${dict(lower=0.0, upper=0.0)}"/>
   <xacro:arg name="parameters_file" default="$(find ewellix_description)/config/$(arg type).yaml"/>
   <xacro:arg name="generate_ros2_control_tag" default="true"/>
@@ -28,6 +29,7 @@
     parent="base_link"
     tf_prefix="$(arg tf_prefix)"
     add_plate="$(arg add_plate)"
+    add_mount="$(arg add_mount)"
     parameters_file="$(arg parameters_file)"
     generate_ros2_control_tag="$(arg generate_ros2_control_tag)"
     use_fake_hardware="$(arg use_fake_hardware)"

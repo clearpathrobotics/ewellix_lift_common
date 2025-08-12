@@ -73,6 +73,7 @@
     parent
     tf_prefix
     add_plate:=true
+    add_mount:=true
     initial_positions:=${dict(upper=0.0, lower=0.0)}
     parameters_file:='$(find ewellix_description)/config/tlt_x25.yaml'
     generate_ros2_control_tag:=false
@@ -189,7 +190,7 @@
     </joint>
 
     <!-- Mount -->
-    <xacro:if value="${parameters.get('mount')}">
+    <xacro:if value="${add_mount and parameters.get('mount')}">
       <!-- Mount: Arm Mounting Plate -->
       <xacro:ewellix_link
         name="${tf_prefix}mount_link"
@@ -220,7 +221,7 @@
       </joint>
 
     </xacro:if>
-    <xacro:unless value="${parameters.get('mount')}">
+    <xacro:unless value="${add_mount and parameters.get('mount')}">
       <!-- Mount: Virtual Link -->
       <link name="${tf_prefix}mount"/>
 
