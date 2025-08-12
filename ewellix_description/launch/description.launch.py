@@ -63,6 +63,22 @@ def generate_launch_description():
         description='ROS 2 controller file to pass to Gazebo.'
     )
 
+    add_mount = LaunchConfiguration('add_mount')
+    arg_add_mount = DeclareLaunchArgument(
+        'add_mount',
+        choices=['true', 'false'],
+        default_value='true',
+        description='Add mount to top of lift'
+    )
+
+    add_plate = LaunchConfiguration('add_plate')
+    arg_add_plate = DeclareLaunchArgument(
+        'add_plate',
+        choices=['true', 'false'],
+        default_value='true',
+        description='Add plate to bottom of lift'
+    )
+
     lift_parameters = LaunchConfiguration('lift_parameters')
     arg_lift_parameters = DeclareLaunchArgument(
         'lift_parameters',
@@ -95,6 +111,12 @@ def generate_launch_description():
             'use_fake_hardware:=',
             'false',
             ' ',
+            'add_mount:=',
+            add_mount,
+            ' ',
+            'add_plate:=',
+            add_plate,
+            ' ',
             'generate_ros2_control_tag:=',
             'true',
             ' ',
@@ -102,7 +124,7 @@ def generate_launch_description():
             control_config,
             ' ',
             'parameters_file:=',
-            lift_parameters
+            lift_parameters,
         ]
     )
 
@@ -127,6 +149,8 @@ def generate_launch_description():
     ld.add_action(arg_lift_parameters)
     ld.add_action(arg_control_config)
     ld.add_action(arg_robot_description_command)
+    ld.add_action(arg_add_mount)
+    ld.add_action(arg_add_plate)
     # Nodes
     ld.add_action(lift_state_publisher)
     return ld
