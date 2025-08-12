@@ -23,10 +23,18 @@
         <joint name="lift_upper_joint" value="0.25"/>
     </group_state>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
-    <disable_collisions link1="lift_base_link" link2="lift_lower_link" reason="Adjacent"/>
-    <disable_collisions link1="lift_base_link" link2="lift_plate_link" reason="Adjacent"/>
-    <disable_collisions link1="lift_base_link" link2="lift_upper_link" reason="Default"/>
-    <disable_collisions link1="lift_lower_link" link2="lift_plate_link" reason="Never"/>
-    <disable_collisions link1="lift_lower_link" link2="lift_upper_link" reason="Adjacent"/>
+    <disable_collisions link1="lift_plate_link" link2="lift_base_link" reason="Adjacent"/>
+    <disable_collisions link1="lift_plate_link" link2="lift_lower_link" reason="Never"/>
     <disable_collisions link1="lift_plate_link" link2="lift_upper_link" reason="Never"/>
+    <disable_collisions link1="lift_plate_link" link2="lift_mount_link" reason="Never"/>
+
+    <disable_collisions link1="lift_base_link" link2="lift_lower_link" reason="Adjacent"/>
+    <disable_collisions link1="lift_base_link" link2="lift_upper_link" reason="Never"/>
+    <disable_collisions link1="lift_base_link" link2="lift_mount_link" reason="Never"/>
+
+    <disable_collisions link1="lift_lower_link" link2="lift_upper_link" reason="Adjacent"/>
+    <disable_collisions link1="lift_lower_link" link2="lift_mount_link" reason="Never"/>
+
+    <disable_collisions link1="lift_upper_link" link2="lift_mount_link"
+    reason="Adjacent"/>
 </robot>
