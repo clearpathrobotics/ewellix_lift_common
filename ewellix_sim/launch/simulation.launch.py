@@ -76,7 +76,7 @@ def generate_launch_description():
 
     # Set gazebo sim resource path to include all sourced ros packages
     gz_sim_resource_path = SetEnvironmentVariable(
-        name='GZ_SIM_RESOURCE_PATH',
+        name='IGN_SIM_RESOURCE_PATH',
         value=[':' + ':'.join(packages_paths)])
 
     # Directories
@@ -181,7 +181,7 @@ def generate_launch_description():
                         name='clock_bridge',
                         output='screen',
                         arguments=[
-                          '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock'
+                          '/clock@rosgraph_msgs/msg/Clock[ign.msgs.Clock'
                         ])
 
     # Launch RViz
