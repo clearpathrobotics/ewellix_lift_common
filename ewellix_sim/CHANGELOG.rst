@@ -2,8 +2,8 @@
 Changelog for package ewellix_sim
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.0 (2025-08-18)
+------------------
 * Update license entry in package.xml
 * Merge pull request `#1 <https://github.com/clearpathrobotics/ewellix_lift_common/issues/1>`_ from clearpathrobotics/feature/viz
   Feature:  Move RViz and Simulation to ewellix_lift_common

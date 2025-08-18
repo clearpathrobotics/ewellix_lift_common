@@ -2,8 +2,8 @@
 Changelog for package ewellix_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.0 (2025-08-18)
+------------------
 * Add argument to disable mount and base plates
 * Update license entry in package.xml
 * Merge branch 'feature/ur620' into jazzy

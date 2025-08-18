@@ -2,8 +2,8 @@
 Changelog for package ewellix_lift_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.0 (2025-08-18)
+------------------
 * Bump version
 * Update documentation with Gazebo instructions
 * Initial update  to ewellix_lift_common docs
