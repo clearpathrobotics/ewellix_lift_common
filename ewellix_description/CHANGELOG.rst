@@ -2,8 +2,8 @@
 Changelog for package ewellix_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.1 (2025-08-22)
+------------------
 * Add argument to disable mount and base plates
 * Update license entry in package.xml
 * Add mount plate mesh
