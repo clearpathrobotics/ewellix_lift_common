@@ -2,6 +2,14 @@
 Changelog for package ewellix_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add argument to disable mount and base plates
+* Update license entry in package.xml
+* Add mount plate mesh
+* Add UR620 meshes and config
+* Contributors: Luis Camero
+
 0.1.0 (2025-01-15)
 ------------------
 * Add launch parameter to modify lift description
