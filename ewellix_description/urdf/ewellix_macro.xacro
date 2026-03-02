@@ -254,6 +254,8 @@
             <param name="conversion">${conversion}</param>
             <param name="rated_effort">${rated_effort}</param>
             <param name="tolerance">${tolerance}</param>
+            <param name="encoder_limits_lower">${parameters.encoder_limits.lower}</param>
+            <param name="encoder_limits_upper">${parameters.encoder_limits.upper}</param>
           </xacro:unless>
         </hardware>
         <joint name="${tf_prefix}lower_joint">
