@@ -73,4 +73,6 @@ upper:
       upper: 0.25
       velocity: 0.025
 
-
+encoder_limits:
+  lower: 0
+  upper: 865
