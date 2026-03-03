@@ -92,3 +92,7 @@ mount:
     z: 1.6900
   mass: 2.0
   offset: 0.0
+
+encoder_limits:
+  lower: 0
+  upper: 1385

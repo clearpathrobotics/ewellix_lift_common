@@ -48,7 +48,7 @@ lower:
     limit:
       effort: 1000
       lower: 0.0
-      upper: 0.15
+      upper: 0.20
       velocity: 0.088
     axis:
       xyz: "0 0 1"
@@ -72,9 +72,11 @@ upper:
     limit:
       effort: 1000
       lower: 0.0
-      upper: 0.15
+      upper: 0.20
       velocity: 0.088
     axis:
       xyz: "0 0 1"
 
-
+encoder_limits:
+  lower: 0
+  upper: 700
