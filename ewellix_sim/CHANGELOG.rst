@@ -2,6 +2,9 @@
 Changelog for package ewellix_sim
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.2.0 (2025-08-18)
 ------------------
 * Update license entry in package.xml

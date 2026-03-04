@@ -2,6 +2,9 @@
 Changelog for package ewellix_lift_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.2.0 (2025-08-18)
 ------------------
 * Bump version

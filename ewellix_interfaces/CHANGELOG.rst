@@ -2,6 +2,9 @@
 Changelog for package ewellix_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.2.0 (2025-08-18)
 ------------------
 

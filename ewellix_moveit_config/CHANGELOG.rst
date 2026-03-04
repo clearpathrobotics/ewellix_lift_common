@@ -2,6 +2,9 @@
 Changelog for package ewellix_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.2.0 (2025-08-18)
 ------------------
 * Add acceleration limits and mount link to SRDF
