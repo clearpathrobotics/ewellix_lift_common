@@ -77,4 +77,6 @@ upper:
     axis:
       xyz: "0 0 1"
 
-
+encoder_limits:
+  lower: 0
+  upper: 520
